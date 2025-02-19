@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: "Pixelify Sans"; /* Use a pixel font */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: start;
+  padding: 0 20px;
+}
+
+div ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+div ul li {
+  margin: 0 15px;
+}
+
+div a {
+  color: #0f0; /* Green links */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu {
+  margin-top: 20px;
+  border: 1px solid #0f0;
+}
+
+.menu-item:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  background-color: #555;
+}
+
+section {
+  padding: 20px;
+  border: 2px solid #0f0; /* White border */
+  margin: 20px;
+  background-color: #000; /* Dark background for sections */
+}
+
+.project {
+  margin: 20px 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  box-shadow: 7px 7px #0f0; /* Adjust shadow properties */
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  gap: 5rem;
+}
+
+.text-container p,
+h4 {
+  margin: 0;
+}
+.text-container h2 {
+  margin: 5px 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+/* PROJECTS */
+
+#my-projects {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  gap: 10px; /* Space between cards */
+  padding: 25px; /* Padding for the container */
+}
+
+.portfolio-card {
+  background-color: #000;
+  border: 2px solid #0f0;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.project-description {
+  padding: 0 15px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.button {
+  background-color: #0f0;
+  color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #4fd64f;
+}
