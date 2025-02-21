@@ -1,21 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
+:root {
+  --background-color: #0a0c0a; /* Background color */
+  --text-color: #fff; /* Main text color */
+  --link-color: #83503e; /* Link color */
+  --border-color: #454141; /* Border color */
+  --hover-color: #794939; /* Hover color for buttons */
+  --shadow-color: #553424; /* Shadow color for profile images */
+  --description-color: #555; /* Color for project descriptions */
+}
+
+.light-mode {
+  --background-color: #5b4b7d; /* Light mode background */
+  --text-color: #000; /* Light mode text color */
+  --link-color: #007bff; /* Light mode link color */
+  --border-color: #007bff; /* Light mode border color */
+  --hover-color: #0056b3; /* Light mode hover color */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light mode shadow color */
+  --description-color: #fc8554; /* Light mode description color */
+  background-image: url("./assets/giphy4.gif");
+}
+
 body {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  font-family: "Pixelify Sans"; /* Use a pixel font */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Pixelify Sans";
   margin: 0;
   padding: 0;
+  background-image: url("./assets/giphy1.gif"); /* Add your GIF path here */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
 }
 
 header {
   text-align: start;
-  padding: 0 20px;
-}
-
-div ul {
-  list-style-type: none;
-  padding: 0;
+  padding: 0 40px;
 }
 
 div ul li {
@@ -23,26 +43,50 @@ div ul li {
 }
 
 div a {
-  color: #0f0; /* Green links */
+  color: var(--link-color);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .menu {
-  margin-top: 20px;
-  border: 1px solid #0f0;
+  margin-top: 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin-left: 20px;
 }
 
 .menu-item:hover {
-  transform: scale(1.1); /* Scale up on hover */
-  background-color: #555;
+  transform: scale(1.35);
 }
+
+.back {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+/* PAGE CONTENT */
 
 section {
   padding: 20px;
-  border: 2px solid #0f0; /* White border */
-  margin: 20px;
-  background-color: #000; /* Dark background for sections */
+  border: 2px solid var(--border-color);
+  margin: 40px;
+  background-color: var(--background-color);
 }
 
 .project {
@@ -50,7 +94,7 @@ section {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 5px;
   text-align: center;
   width: 100%;
@@ -67,7 +111,8 @@ footer p {
 .profile-image {
   width: 250px;
   height: 250px;
-  box-shadow: 7px 7px #0f0; /* Adjust shadow properties */
+  border-radius: 50%;
+  border: 10px solid var(--shadow-color);
 }
 
 .profile-container {
@@ -82,7 +127,7 @@ footer p {
 h4 {
   margin: 0;
 }
-.text-container h2 {
+.text-container h1 {
   margin: 5px 0;
 }
 
@@ -108,22 +153,35 @@ h4 {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr); /* 3 columns */
-  gap: 10px; /* Space between cards */
-  padding: 25px; /* Padding for the container */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 35px;
 }
 
 .portfolio-card {
-  background-color: #000;
-  border: 2px solid #0f0;
-  width: 300px;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  width: 255px;
+  height: 330px;
   text-align: center;
   overflow: hidden;
 }
 
+.portfolio-card:hover {
+  transform: scale(1.05);
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-image {
-  width: 100%;
+  width: 80%;
+  margin-top: 15px;
   height: auto;
+  border: 2px solid var(--border-color);
 }
 
 .project-title {
@@ -133,8 +191,8 @@ h4 {
 
 .project-description {
   padding: 0 15px;
-  color: #555;
-  font-size: 1rem;
+  color: var(--description-color);
+  font-size: 0.85rem;
 }
 
 .button-container {
@@ -144,12 +202,56 @@ h4 {
 }
 
 .button {
-  background-color: #0f0;
-  color: #000;
-  padding: 10px 15px;
+  background-color: var(--link-color);
+  color: var(--background-color);
+  padding: 7px 11px;
+  font-size: 1.25rem;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: #4fd64f;
+  background-color: var(--hover-color);
+}
+
+/* CONTACT */
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+/* ABOUT */
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-container img {
+  max-width: 250px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 10px solid var(--shadow-color);
+}
+
+/* THEME */
+
+#theme-toggle {
+  font-family: "Pixelify Sans";
+  border: none;
+  background: none;
+  color: var(--text-color);
+  cursor: pointer;
 }

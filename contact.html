@@ -5,15 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Contact Me</h1>
+      <div class="navbar">
+        <h1>Contact Me</h1>
+        <div class="menu">
+          <ul>
+            <li class="menu-item"><a href="projects.html">Projects</a></li>
+            <li class="menu-item"><a href="skills.html">Skills</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button id="theme-toggle">Switch Theme</button>
+      </div>
       <a href="index.html" class="back">Back to Home</a>
     </header>
 
     <section>
-      <p>Email: <a href="mailto:your-email@example.com">your-email </a></p>
+      <div class="card">
+        <h2>Email</h2>
+        <p><a href="mailto:ddelport101@gmail.com">ddelport101@gmail.com</a></p>
+      </div>
+
+      <div class="card">
+        <h2>LinkedIn</h2>
+        <p>
+          <a href="https://www.linkedin.com/in/donovan-delport/" target="_blank">My LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Phone Number</h2>
+        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
     </section>
 
     <footer>

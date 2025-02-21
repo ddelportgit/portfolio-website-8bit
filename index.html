@@ -3,23 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>8-Bit Portfolio</title>
+    <title>Donovan Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Welcome to My Portfolio</h1>
-    </header>
-
-    <div class="profile-container">
-      <div class="profile">
-        <img src="./assets/profile-pic.png" alt="Profile Image" class="profile-image" />
-      </div>
-      <div class="text-container">
-        <p>Hello I'm</p>
-        <h2>Donovan Delport</h2>
-        <h4>Frontend Developer</h4>
+      <div class="navbar">
+        <h1>Welcome to My Portfolio</h1>
         <div class="menu">
           <ul>
             <li class="menu-item"><a href="projects.html">Projects</a></li>
@@ -28,11 +19,23 @@
             <li class="menu-item"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+        <button id="theme-toggle">Switch Theme</button>
+      </div>
+    </header>
+
+    <div class="profile-container">
+      <div class="profile">
+        <img src="./assets/profile-pic.png" alt="Profile Image" class="profile-image" />
+      </div>
+      <div class="text-container">
+        <p>Hello I'm</p>
+        <h1>Donovan Delport</h1>
+        <h4>Frontend Developer</h4>
       </div>
     </div>
 
     <footer>
-      <p>Copyright &copy; - 2025 Donovan Delport. - All Rights Resereved</p>
+      <p>Copyright &copy; - 2025 Donovan Delport. - All Rights Reserved</p>
     </footer>
   </body>
 </html>

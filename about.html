@@ -5,15 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>About Me</h1>
+      <div class="navbar">
+        <h1>About Me</h1>
+        <div class="menu">
+          <ul>
+            <li class="menu-item"><a href="projects.html">Projects</a></li>
+            <li class="menu-item"><a href="skills.html">Skills</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button id="theme-toggle">Switch Theme</button>
+      </div>
       <a href="index.html" class="back">Back to Home</a>
     </header>
 
-    <section>
-      <p>Brief description about yourself.</p>
+    <section class="about-container">
+      <img src="./assets/profile-bw.png" alt="Description of image" />
+      <div>
+        <p>
+          I am a front-end developer starting my journey in web development. I have a strong
+          interest in crafting visually appealing and intuitive user interfaces.
+        </p>
+        <p>
+          Currently, I am focused on improving my skills in HTML, CSS, and JavaScript, and I'm
+          dedicated to enhancing my knowledge of React. My goal is to create engaging web
+          experiences that not only look great but also provide seamless functionality for users.
+        </p>
+
+        <p>
+          I'm excited about the opportunities ahead and ready to take on new challenges in this
+          dynamic field.
+        </p>
+      </div>
     </section>
 
     <footer>
